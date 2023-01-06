@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/login2/login2",
-    "pages/logs/logs",
     "pages/myorder/myorder",
+    "pages/OrderItem/OrderItem",
+    "pages/logs/logs",
     "pages/myOrderItem/myOrderItem",
     "pages/receiptslist/receiptslist",
     "pages/outs/outs",
@@ -12,7 +13,8 @@
     "pages/menu/menu",
     "pages/index/index",
     "pages/search/search",
-    "pages/recommendItem/recommendItem"
+    "pages/recommendItem/recommendItem",
+    "pages/OrderItem"
   ],
   "window": {
     "backgroundTextStyle": "light",

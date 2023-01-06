@@ -1,13 +1,24 @@
-/* 线 */
-.view_line {
-  width: 90%;
-  height: 5rpx;
-  background: #E0E3DA;
-  margin: 8px 5% 8px 5%;
-  text-align: center;
+page{
+  background-color: rgb(240, 240, 240);
 }
+/* 线 */
+/* .line {
+  width: 90%;
+  height: 2rpx;
+  background: #E0E3DA;
+  margin: 20px 5% 5px 5%;
+  text-align: center;
+} */
 .item{
-  border: 3rpx solid #b0c4de;
-	border-radius: 20rpx;
-  padding: 10rpx;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+  border-radius: 40rpx;
+  flex-direction: column;
+  margin: 40rpx auto;
+  width: 90%;
+  padding: 8px;
+}
+.itemTitle{
+  display: flex;
 }

@@ -1,0 +1,80 @@
+<!--pages/PaymentRecords/PaymentRecords.wxml-->
+<view class="main">
+  <view class="PayPage center">
+    <view class="records-title">订单详情</view>
+    <view class="records-item">
+      <view class="records-item-text">订单单号：</view>
+      <view class="records-item-input">{{orderItem.order_id}}</view>
+    </view>
+    <view class="records-item">
+      <view class="records-item-text">下单时间：</view>
+      <view class="records-item-input">{{orderItem.order_date}}</view>
+    </view>
+    <view class="records-item">
+      <view class="records-item-text">客户姓名：</view>
+      <view class="records-item-input">{{orderItem.order_psn}}</view>
+
+    </view>
+    <view class="records-item">
+      <view class="records-item-text">下单地址：</view>
+      <view class="records-item-input">{{orderItem.order_address}}</view>
+
+    </view>
+    <view class="records-item">
+      <view class="records-item-text">客户电话：</view>
+      <view class="records-item-input">{{orderItem.order_phone}}</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ1件数：</view>
+      <view class="records-item-input">{{orderItem.czr1}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ2件数：</view>
+      <view class="records-item-input">{{orderItem.czr2}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ3件数：</view>
+      <view class="records-item-input">{{orderItem.czr3}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ21件数：</view>
+      <view class="records-item-input">{{orderItem.czr21}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ22件数：</view>
+      <view class="records-item-input">{{orderItem.czr22}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">CRZ23件数：</view>
+      <view class="records-item-input">{{orderItem.czr23}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">FZY2E1件数：</view>
+      <view class="records-item-input">{{orderItem.fzy2E1}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">FZY2E2件数：</view>
+      <view class="records-item-input">{{orderItem.fzy2E2}} 件</view>
+    </view>
+
+    <view class="records-item">
+      <view class="records-item-text">FZY2E3件数：</view>
+      <view class="records-item-input">{{orderItem.fzy2E3}} 件</view>
+    </view>
+
+  </view>
+
+  <view class="error center" wx:if="{{RecordId==-1}}">
+    <view class="error-page">
+      订单加载失败
+    </view>
+  </view>
+</view>

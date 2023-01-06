@@ -12,7 +12,7 @@ Page({
   gotoListItem(e){
     var order_id=e.currentTarget.dataset.order_id
     wx.navigateTo({
-      url: '../myOrderItem/myOrderItem?order_id='+order_id,
+      url: '../OrderItem/OrderItem?order_id='+order_id,
     })
   },
 
