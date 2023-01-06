@@ -1,0 +1,21 @@
+<view class="pages">
+  <view wx:if="{{list.length==0}}" class="none">
+    <view id="none-text">暂无订单</view>
+  </view>
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="item" wx:key="index" bindtap="gotoRecommendItem" data-title="{{item.order_id}}" data-text="{{item.recommend}}">
+          <!-- 标题 -->
+          <view class='itemTitle'>
+            <text class='Title'>出货单号：{{item.order_id}}</text>
+          </view>
+          <!-- 文本 -->
+          <view class='itemText'>
+            <text class='Text'>{{item.recommend}}</text>
+          </view>
+          <!-- 按钮 -->
+          <view class='itemBtn'>
+            <button class="btn" style="width: 200rpx;" catchtap="out" data-orderid="{{item.order_id}}" data-id="{{item.id}}">接单</button>
+          </view>
+      </view>
+  </block>
+</view>

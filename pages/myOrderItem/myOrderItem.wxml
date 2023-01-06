@@ -1,0 +1,21 @@
+<view class="ALL">
+  <view class="order">
+      <view>订单单号:{{orderItem.order_id}}</view>
+      <view>下单时间：{{orderItem.order_date}}</view>
+      <view>客户姓名：{{orderItem.order_psn}}</view>
+      <view>下单地址：{{orderItem.order_address}}</view>
+      <view>客户电话：{{orderItem.order_phone}}</view>
+      <view>CRZ1件数：{{orderItem.czr1}}</view>
+      <view>CRZ2件数：{{orderItem.czr2}}</view>
+      <view>CRZ3件数：{{orderItem.czr3}}</view>
+      <view>CRZ21件数：{{orderItem.czr21}}</view>
+      <view>CRZ22件数：{{orderItem.czr22}}</view>
+      <view>CRZ23件数：{{orderItem.czr23}}</view>
+      <view>FZY2E1件数：{{orderItem.fzy2E1}}</view>
+      <view>FZY2E2件数：{{orderItem.fzy2E2}}</view>
+      <view>FZY2E3件数：{{orderItem.fzy2E3}}</view>
+      <view>接单时间：{{orderItem.edit_date}}</view>
+      <view>订单状态：{{orderItem.is_finish}}</view>
+      <view>备注信息：{{orderItem.order_remark}}</view>
+  </view>
+</view>

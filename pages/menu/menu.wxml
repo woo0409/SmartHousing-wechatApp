@@ -1,0 +1,24 @@
+<view>
+    <view class="title">
+      <text>入库</text>
+    </view>  
+      <button class="btn">成品待入库</button>
+      <button class="btn2">销售退货</button>
+    <view class="title">
+      <text>出库</text>
+    </view>  
+      <button class="btn">拆托出库</button>
+      <button class="btn2">报废出库</button>
+      <button class="btn">其他出库</button>
+      <button class="btn2" bindtouchstart="gotoOutStart" bindtransitionend="gotoOute" bindtap="gotoOut" capture-bind:longpress="longPress">返工出库</button>
+    <view class="title">
+      <text>物流</text>
+    </view>  
+      <button>发货拣货</button>
+    <view class="title">
+      <text >运输</text>
+    </view>  
+    <view class="buttons">
+      <button class="btn">组托单</button>
+    </view>
+</view>

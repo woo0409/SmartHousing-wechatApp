@@ -1,0 +1,43 @@
+.All{
+  background-color: rgb(190, 251, 248);
+  height: 1200rpx;
+  width: 100%;
+}
+.top{
+  height:100rpx;
+  width: 100%;
+  background-color:rgb(30, 151, 231);
+  color: white;
+  line-height: 100rpx;
+}
+.saoma{
+  height: 60rpx;
+  width: 60rpx;
+  float: right;
+  margin-right: 50rpx;
+  margin-top: 20rpx;
+}
+.title{
+  float: left;
+  margin-left: 50rpx;
+}
+.body{
+  height: 100rpx;
+  width: 100%;
+  float: left;
+  background-color: cadetblue;
+}
+.input{
+ float: left;
+  height: 80rpx;
+  margin: 10rpx;
+  width: 70%;
+  background-color: white;
+}
+.Findbutton{
+  float: right;
+  line-height: 100rpx;
+  font-size: medium;
+  margin-right: 70rpx;
+}
+

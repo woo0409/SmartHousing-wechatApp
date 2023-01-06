@@ -1,0 +1,15 @@
+.title{
+  height: 50rpx;
+}
+.buttons{
+  height: 400rpx;
+}
+button{
+  width: 35%;
+  margin: 20rpx;
+  height:20%;
+}
+
+
+
+

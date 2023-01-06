@@ -1,0 +1,27 @@
+<view wx:key="id">
+  <view>
+    <input placeholder='手动添加条形码'/>
+    <button bindtap="add">添加</button>
+  </view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">条码</view>
+      <view class="th">件数</view>
+    </view>
+    <block wx:for="{{listData}}" wx:key="index">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.id}}</view>
+        <view class="td">{{item.num}}</view>
+      </view> 
+      <view class="tr" wx:else>
+        <view class="td">{{item.id}}</view>
+        <view class="td">{{item.num}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="bottom">
+    <text>计数：{{count}}件</text>
+    <button class=".buttons">提交</button>
+    <button class=".buttons" bindtap="removeAll">清空</button>
+  </view> 
+</view>

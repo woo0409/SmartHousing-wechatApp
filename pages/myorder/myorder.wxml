@@ -1,0 +1,25 @@
+<view class="ALL">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="item" wx:key="index" bindtap="gotoListItem" data-order_id="{{item.order_id}}">
+          <!-- 单号 -->
+          <view class='itemTitle'>
+            <text class='Title'>出货单号：{{item.order_id}}</text>
+          </view>
+
+          <view class="itemTitle">
+            <text class="Title">客户姓名：{{item.order_psn}}</text>
+          </view>
+
+          <view class="itemTitle">
+            <text class="Title">客户电话：{{item.order_phone}}</text>
+          </view>
+
+          <view class="itemTitle">
+            <text class="Title">客户地址：{{item.order_address}}</text>
+          </view>
+
+          <!-- <button style="width: 200rpx;">出库</button> -->
+      </view>
+      <view class="view_line"></view>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+<view class="All">
+  <view class="top">
+    <text class="title">扫码入库</text>
+    <image bindtap="Saopma" class="saoma" src="/images/saoma/扫码.png"></image>
+  </view>
+  <view class="body">
+    <input class ="input"placeholder="条形码显示" value="{{dataCode}}"/>
+    <text bindtap="showData"class="Findbutton">查询</text>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/login2/login2",
+    "pages/logs/logs",
+    "pages/myorder/myorder",
+    "pages/myOrderItem/myOrderItem",
+    "pages/receiptslist/receiptslist",
+    "pages/outs/outs",
+    "pages/usercenter/usercenter",
+    "pages/home/home",
+    "pages/out/out",
+    "pages/menu/menu",
+    "pages/index/index",
+    "Componet/select/select",
+    "pages/search/search",
+    "pages/recommendItem/recommendItem"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#6110f6",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabbar/home_normal.png",
+        "selectedIconPath": "/images/tabbar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/receiptslist/receiptslist",
+        "text": "单据中心",
+        "iconPath": "/images/tabbar/receiptslist.png",
+        "selectedIconPath": "/images/tabbar/receiptslist2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查询统计",
+        "iconPath": "/images/tabbar/search.png",
+        "selectedIconPath": "/images/tabbar/search2.png"
+      },
+      {
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "我的",
+        "iconPath": "/images/tabbar/user_normal.png",
+        "selectedIconPath": "/images/tabbar/user_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
