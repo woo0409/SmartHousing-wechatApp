@@ -1,2 +1,70 @@
-<!--pages/usercenter/usercenter.wxml-->
-<text>pages/usercenter/usercenter.wxml</text>
+	<!-- 第1部分 -->
+	<view class='top-container'>
+		<image class='bg-img' src='../../images/tabbar/仓库.png'></image>
+	</view>
+	<!-- 第2部分 -->
+	<view class='middle-container'>
+		<view class="view_2">
+			<view class="view_tupianwenzi">
+				<image class="image_tupian" src="../../images/tabs/contact-active.png"></image>
+				<text class="text_1">打车</text>
+			</view>
+			<view class="view_tupianwenzi" bindtap="webViewAll" id="2">
+				<image class="image_tupian" src="../../images/tabs/home-active.png"></image>
+				<text class="text_1">门票</text>
+			</view>
+
+			<view class="view_tupianwenzi" bindtap="jianjie" bindtap="webViewAll" id="3">
+				<image class="image_tupian" src="../../images/tabs/message-active.png"></image>
+				<text class="text_1">酒店</text>
+			</view>
+			<view class="view_tupianwenzi" bindtap="webViewAll" id="6">
+				<image class="image_tupian" src="../../images/tabbar/more.png"></image>
+				<text class="text_1">更多</text>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 第3部分 -->
+	<view class='container_3'>
+    <view class='middle-item' hover-stay-time="150" bindtap="scan">
+			<image class="image_tupian_1" src="../../images/saoma/扫码.png"></image>
+			<text class='text_2'>扫码</text>
+			<image class="image-jiantou" src="../../images/箭头.png"></image>
+		</view>
+	</view>
+
+	<!-- 第4部分 -->
+	<view class='container_4'>
+		<view class='middle-item' hover-stay-time="150" bindtap="gotoSetting">
+			<image class="image_tupian_1" src="../../images/tabbar/setting.png"></image>
+			<text class='text_2'>设置</text>
+			<image class="image-jiantou" src="../../images/箭头.png"></image>
+		</view>
+
+		<view class="view_line"></view>
+
+		<view class='middle-item' hover-class="opcity" hover-stay-time="150">
+			<image class="image_tupian_1" src="../../images/tabbar/mine2.png"></image>
+			<text class='text_2'>个人信息</text>
+			<image class="image-jiantou" src="../../images/箭头.png"></image>
+		</view>
+
+		<view class="view_line"></view>
+		
+		<view class='middle-item' hover-class="opcity" hover-stay-time="150">
+			<image class="image_tupian_1" src="../../images/tabbar/t2.png"></image>
+			<text class='text_2'>消费记录</text>
+			<image class="image-jiantou" src="../../images/箭头.png"></image>
+		</view>
+
+    <view class="view_line"></view>
+		
+		<view class='middle-item' hover-class="opcity" hover-stay-time="150" bindtap="myorder">
+			<image class="image_tupian_1" src="../../images/tabbar/订单.png"></image>
+			<text class='text_2'>我的订单</text>
+			<image class="image-jiantou" src="../../images/箭头.png"></image>
+		</view>
+	</view>
+

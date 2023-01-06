@@ -1,35 +1,18 @@
-// pages/myOrderItem/myOrderItem.js
+// pages/OrderItem.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    orderItem:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    var that=this
 
-    console.log(options.order_id)
-    var order_id=options.order_id
-    
-    wx.request({
-      url: 'http://127.0.0.1:8080/getOrderItem',
-      method:"GET",
-      data:{
-        order_id:order_id
-      },
-      success(res){
-        console.log(res.data)
-        that.setData({
-          orderItem:res.data
-        })
-      }
-    })
   },
 
   /**

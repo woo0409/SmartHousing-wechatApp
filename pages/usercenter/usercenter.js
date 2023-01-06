@@ -8,6 +8,29 @@ Page({
 
   },
 
+  scan(){
+    wx.scanCode({
+      onlyFromCamera: true,
+      scanType: [],
+      success: (result) => {
+        console.log(result.result)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
+  },
+
+  gotoSetting(){
+    console.log("Setting")
+  },
+
+  //点击我的订单
+  myorder(){
+    wx.navigateTo({
+      url: '../myorder/myorder',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
